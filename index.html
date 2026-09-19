@@ -1,97 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tallkotten • Svensk Minecraft-server</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tallkotten | Svensk Minecraft Server</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#top">🌲 TALLKOTTEN</a>
-    <nav>
-      <a href="#server">Servern</a>
-      <a href="#ranks">Ranker</a>
-      <a href="#events">Events</a>
-      <a href="#regler">Regler</a>
-      <a href="#discord">Discord</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">🌲 EN SVENSK MINECRAFT-SERVER</p>
-        <h1>Välkommen till<br><span>Tallkotten</span></h1>
-        <p class="lead">Survival • PvP • Events • Gemenskap</p>
-        <div class="buttons">
-          <button class="primary" onclick="copyIP()">Kopiera server-IP</button>
-          <a class="secondary" href="#server">Läs mer</a>
-        </div>
-        <p id="copyStatus" class="copy-status"></p>
-      </div>
-      <div class="tree">🌲</div>
-    </section>
-
-    <section id="server" class="section">
-      <p class="eyebrow">OM SERVERN</p>
-      <h2>Bygg din egen historia</h2>
-      <p class="intro">Tallkotten är en svensk Minecraft-server där du kan överleva, bygga, tävla och spela tillsammans med andra.</p>
-      <div class="cards">
-        <article><span>⚔️</span><h3>Survival & PvP</h3><p>Spela survival och möt andra spelare i PvP.</p></article>
-        <article><span>🏆</span><h3>Events</h3><p>Delta i byggtävlingar och andra serverevents.</p></article>
-        <article><span>🛍️</span><h3>Ekonomi</h3><p>Handla, tjäna pengar och klättra genom rankerna.</p></article>
-      </div>
-    </section>
-
-    <section id="ranks" class="section dark">
-      <p class="eyebrow">RANKER</p>
-      <h2>Klättra genom Tallkotten</h2>
-      <div class="rank-grid">
-        <div class="rank"><h3>Nova</h3><strong>13 000</strong><small>pengar</small></div>
-        <div class="rank"><h3>Cosmos</h3><strong>25 000</strong><small>pengar</small></div>
-        <div class="rank"><h3>Comet</h3><strong>50 000</strong><small>pengar</small></div>
-        <div class="rank"><h3>Meteor</h3><strong>100 000</strong><small>pengar</small></div>
-        <div class="rank featured"><h3>Galaxy</h3><strong>250 000</strong><small>pengar</small></div>
-      </div>
-    </section>
-
-    <section id="events" class="section">
-      <p class="eyebrow">EVENTS</p>
-      <h2>Det händer på Tallkotten</h2>
-      <div class="event">
-        <div class="event-icon">🏰</div>
-        <div><h3>Byggtävling – Medeltida Tema!</h3><p>Bygg ett slott, en by, en borg, en kyrka, en marknad eller ett torn.</p></div>
-        <div class="event-time">30 min</div>
-      </div>
-    </section>
-
-    <section id="regler" class="section dark">
-      <p class="eyebrow">REGLER</p>
-      <h2>Spela schysst</h2>
-      <div class="rules">
-        <p><b>01</b> Respektera andra spelare.</p>
-        <p><b>02</b> Använd inte fusk eller exploits.</p>
-        <p><b>03</b> Förstör inte andras byggen.</p>
-        <p><b>04</b> Följ personalens instruktioner.</p>
-      </div>
-    </section>
-
-    <section id="discord" class="section discord">
-      <div>
-        <p class="eyebrow">GEMENSKAP</p>
-        <h2>Häng med på Discord</h2>
-        <p>Få nyheter, prata med andra spelare och missa inga events.</p>
-      </div>
-      <a class="primary big" href="https://discord.gg/EVhvRcwjm" target="_blank" rel="noopener">Öppna Discord →</a>
-    </section>
-  </main>
-
-  <footer>
-    <strong>🌲 TALLKOTTEN</strong>
-    <span>© 2026 Tallkotten</span>
-  </footer>
-
-  <script src="script.js"></script>
+<header>
+  <div class="logo">🌲 TALLKOTTEN</div>
+  <nav>
+    <a href="#hem">Hem</a><a href="#server">Server</a><a href="#regler">Regler</a><a href="#ranker">Ranker</a><a href="#discord">Discord</a>
+  </nav>
+</header>
+<section id="hem" class="hero">
+  <div class="hero-content">
+    <div class="badge">SVENSK MINECRAFT SERVER</div>
+    <h1>Välkommen till<br><span>Tallkotten</span></h1>
+    <p>En svensk Minecraft-server med Survival, PvP och en aktiv community.</p>
+    <div class="buttons"><a href="#server" class="button main-button">🎮 Spela nu</a><a href="#discord" class="button second-button">💬 Discord</a></div>
+  </div>
+</section>
+<section id="server" class="section">
+  <h2>🎮 Server</h2>
+  <div class="server-card">
+    <h3>Tallkotten</h3><p>Server-IP</p>
+    <div class="ip-box"><span id="server-ip">tallkotten.doomhosting.se</span><button id="copy-ip" type="button">📋 Kopiera server-IP</button></div>
+    <p class="copied" id="copied" aria-live="polite"></p>
+    <div class="server-info"><div><strong>🌍</strong><span>Survival</span></div><div><strong>⚔️</strong><span>PvP</span></div><div><strong>🇸🇪</strong><span>Svensk</span></div></div>
+  </div>
+</section>
+<section id="regler" class="section"><h2>📜 Regler</h2><div class="cards">
+  <div class="card"><div class="card-icon">🤝</div><h3>Respektera andra</h3><p>Var trevlig och respektfull mot andra spelare.</p></div>
+  <div class="card"><div class="card-icon">🚫</div><h3>Inga fusk</h3><p>Hacks och andra otillåtna klienter är förbjudna.</p></div>
+  <div class="card"><div class="card-icon">💬</div><h3>Ingen spam</h3><p>Undvik spam, reklam och störande beteende.</p></div>
+  <div class="card"><div class="card-icon">🛡️</div><h3>Följ reglerna</h3><p>Alla spelare måste följa Tallkottens regler.</p></div>
+</div></section>
+<section id="ranker" class="section"><h2>⭐ Ranker</h2><div class="cards ranks">
+  <div class="rank-card"><h3>Nova</h3><div class="price">13 000</div><p>coins</p></div>
+  <div class="rank-card"><h3>Cosmos</h3><div class="price">25 000</div><p>coins</p></div>
+  <div class="rank-card"><h3>Comet</h3><div class="price">50 000</div><p>coins</p></div>
+  <div class="rank-card"><h3>Meteor</h3><div class="price">100 000</div><p>coins</p></div>
+  <div class="rank-card"><h3>Galaxy</h3><div class="price">250 000</div><p>coins</p></div>
+</div></section>
+<section id="discord" class="section"><div class="discord-card"><div class="discord-icon">💬</div><h2>Gå med i Discord</h2><p>Häng med communityn och få de senaste nyheterna om Tallkotten.</p><a href="https://discord.gg/EVhvRcwjm" target="_blank" rel="noopener noreferrer" class="button main-button">Öppna Discord</a></div></section>
+<footer><div class="footer-logo">🌲 TALLKOTTEN</div><p>© 2026 Tallkotten • Svensk Minecraft Community</p></footer>
+<script>
+const copyButton = document.getElementById('copy-ip');
+const copied = document.getElementById('copied');
+copyButton.addEventListener('click', async () => {
+  const ip = 'tallkotten.doomhosting.se';
+  try {
+    await navigator.clipboard.writeText(ip);
+    copied.textContent = '✓ Server-IP kopierat!';
+  } catch {
+    const area = document.createElement('textarea');
+    area.value = ip; area.style.position = 'fixed'; area.style.opacity = '0';
+    document.body.appendChild(area); area.focus(); area.select();
+    try { document.execCommand('copy'); copied.textContent = '✓ Server-IP kopierat!'; }
+    catch { copied.textContent = 'Markera och kopiera IP:t: ' + ip; }
+    area.remove();
+  }
+  setTimeout(() => copied.textContent = '', 3000);
+});
+</script>
 </body>
 </html>
