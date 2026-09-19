@@ -1,2 +1,2 @@
-# HGL1734-alt.github.io
+# Tallkotten.github.io
 Tallkotten minecraft server
