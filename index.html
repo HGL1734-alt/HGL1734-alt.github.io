@@ -1,82 +1,88 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090b14">
-  <meta name="description" content="58Client – en modern Minecraft-klient med fokus på prestanda och anpassning.">
-  <title>58Client — Make your game yours</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="description" content="58Client — Minecraft client. Anpassa din spelupplevelse.">
+  <title>58Client — Your game. Your setup.</title>
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="58Client startsida"><span class="brand-mark">58</span><span>CLIENT</span></a>
-    <button class="menu-toggle" aria-label="Öppna meny" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#features">Funktioner</a>
-      <a href="#about">Om klienten</a>
-      <a href="#download">Nedladdning</a>
-      <a class="nav-cta" href="#download">Kom igång <span>↗</span></a>
-    </nav>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> MINECRAFT CLIENT</div>
-        <h1>PLAY DIFFERENT.<br><span>PLAY 58.</span></h1>
-        <p class="hero-text">En stilren Minecraft-klient byggd för att ge dig kontroll över din spelupplevelse. Anpassa gränssnittet, hitta dina favoritfunktioner och gör spelet till ditt eget.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#download">Utforska 58Client <span>↗</span></a>
-          <a class="button button-ghost" href="#features">Se funktioner</a>
-        </div>
-        <div class="hero-note"><span class="tiny-line"></span> BUILT FOR YOUR GAME</div>
+<header class="header">
+  <a class="logo" href="#home"><span class="logo-icon">58</span><span>58CLIENT</span></a>
+  <button class="menu-button" aria-label="Öppna meny" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#client">Client</a><a href="#modules">Modules</a><a href="#setup">Setup</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+    <a class="nav-download" href="#download">Download <b>↗</b></a>
+  </nav>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-inner">
+    <div class="eyebrow"><i></i> THE NEXT WAY TO PLAY</div>
+    <h1>YOUR GAME.<br><em>YOUR SETUP.</em></h1>
+    <p class="lead">All the tools you want, gathered in one clean Minecraft client. Make your setup yours with 58Client.</p>
+    <div class="actions"><a class="btn primary" href="#client">Explore 58Client <span>↗</span></a><a class="btn secondary" href="#modules">Explore modules</a></div>
+    <div class="hero-meta"><span>58CLIENT</span><span class="meta-line"></span><span>MINECRAFT CLIENT</span></div>
+  </div>
+  <div class="hero-preview">
+    <div class="preview-glow"></div>
+    <div class="game-window">
+      <div class="game-top"><span>58CLIENT</span><span>● ● ●</span></div>
+      <div class="game-scene"><div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="ground"></div><div class="crosshair">+</div>
+        <div class="hud-box"><b>58 HUD</b><span>FPS <strong>240</strong></span><span>XYZ <strong>120 / 64 / -82</strong></span><span>Ping <strong>24ms</strong></span></div>
       </div>
-      <div class="hero-art" aria-label="Dekorativ 58Client-grafik">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="glow-card">
-          <div class="card-top"><span class="window-dots">● ● ●</span><span>58CLIENT // MENU</span><span class="live">● LIVE</span></div>
-          <div class="mock-title"><small>WELCOME TO</small><strong>58<span>CLIENT</span></strong></div>
-          <div class="mock-tabs"><span class="selected">COMBAT</span><span>RENDER</span><span>HUD</span><span>MISC</span></div>
-          <div class="mock-row"><span>Module One</span><i class="switch on"></i></div>
-          <div class="mock-row"><span>Module Two</span><i class="switch"></i></div>
-          <div class="mock-row"><span>Custom HUD</span><i class="switch on"></i></div>
-          <div class="mock-footer"><span>58CLIENT</span><span>v1.0 • PREVIEW</span></div>
-        </div>
-        <div class="floating-tag tag-top">YOUR STYLE. YOUR GAME.</div>
-        <div class="floating-tag tag-bottom">58 // CLIENT</div>
-      </div>
-    </section>
+      <div class="click-panel"><div class="panel-head"><b><span>58</span> CLIENT</b><small>RSHIFT</small></div><div class="panel-tabs"><span class="active">Combat</span><span>Render</span><span>HUD</span><span>Misc</span></div><div class="module-row">Module settings <i class="toggle on"></i></div><div class="module-row">Custom HUD <i class="toggle on"></i></div><div class="module-row">Keybind editor <i class="toggle"></i></div><div class="panel-foot">58CLIENT <span>CONFIG SAVED</span></div></div>
+    </div>
+    <div class="float-label label-a">CUSTOM CLICKGUI</div><div class="float-label label-b">BUILT FOR YOU — 58</div>
+  </div>
+  <a class="scroll-cue" href="#client">↓ <span>SCROLL TO EXPLORE</span></a>
+</section>
 
-    <div class="ticker" aria-hidden="true"><span>58CLIENT</span><b>✳</b><span>MAKE IT YOURS</span><b>✳</b><span>58CLIENT</span><b>✳</b><span>MAKE IT YOURS</span></div>
+<section class="intro section" id="client">
+  <div class="section-kicker">01 / INSIDE THE CLIENT</div>
+  <div class="intro-grid"><h2>MEET<br><em>58CLIENT.</em></h2><p>Clean design. Useful tools. Your own settings. 58Client brings your client experience together in one place, with a focus on customization and a simple interface.</p></div>
+  <div class="benefits">
+    <article><small>01</small><h3>Your interface</h3><p>Open the ClickGUI and organize your client the way you like it.</p></article>
+    <article><small>02</small><h3>Your settings</h3><p>Adjust available options, keybinds and HUD elements.</p></article>
+    <article><small>03</small><h3>Your experience</h3><p>A client project with room for new features and improvements.</p></article>
+    <article><small>04</small><h3>Your style</h3><p>Make the interface feel like your own with custom themes.</p></article>
+  </div>
+</section>
 
-    <section class="section" id="features">
-      <div class="section-heading"><div><div class="eyebrow">01 / FEATURES</div><h2>ALL THE TOOLS.<br><span>ONE CLIENT.</span></h2></div><p>En samlad plats för funktionerna du använder. Det här är en presentationssida – innehållet kan ändras när klienten utvecklas.</p></div>
-      <div class="feature-grid">
-        <article class="feature-card feature-large"><div class="feature-icon">⌘</div><div class="feature-number">01</div><h3>ClickGUI</h3><p>En tydlig meny med kategorier, sökning och inställningar som gör klienten enkel att konfigurera.</p><span class="feature-label">CUSTOM INTERFACE</span></article>
-        <article class="feature-card"><div class="feature-icon">◈</div><div class="feature-number">02</div><h3>HUD</h3><p>Samla viktig spelinformation i en anpassningsbar overlay.</p><span class="feature-label">AT A GLANCE</span></article>
-        <article class="feature-card"><div class="feature-icon">⌁</div><div class="feature-number">03</div><h3>Performance</h3><p>Fokus på en smidig och responsiv spelupplevelse.</p><span class="feature-label">SMOOTH GAMEPLAY</span></article>
-        <article class="feature-card"><div class="feature-icon">✳</div><div class="feature-number">04</div><h3>Customization</h3><p>Välj färger, keybinds och utseende så att klienten känns som din.</p><span class="feature-label">MAKE IT YOURS</span></article>
-      </div>
-    </section>
+<section class="gui-section">
+  <div class="gui-copy"><div class="section-kicker">02 / THE INTERFACE</div><h2>ONE CLIENT.<br><em>YOUR CONTROL.</em></h2><p>Open the menu with Right Shift. Browse categories, search for modules and fine-tune your settings in the ClickGUI.</p><div class="gui-points"><span>✳ Category panels</span><span>✳ Module search</span><span>✳ Keybind editor</span><span>✳ Custom themes</span></div></div>
+  <div class="gui-showcase"><div class="fake-gui"><div class="fake-sidebar"><b>58.</b><span class="chosen">Combat</span><span>Render</span><span>HUD</span><span>Misc</span></div><div class="fake-content"><div class="fake-title">COMBAT <small>Configure your modules</small></div><div class="fake-search">⌕ Search modules...</div><div class="fake-setting">Module One <i class="toggle on"></i></div><div class="fake-setting">Module Two <i class="toggle"></i></div><div class="fake-setting">Module Three <i class="toggle on"></i></div><div class="fake-setting">Settings <b>›</b></div></div></div><div class="gui-caption">CLICKGUI PREVIEW <span>58CLIENT / UI</span></div></div>
+</section>
 
-    <section class="about-section" id="about">
-      <div class="about-visual"><div class="big-58">58</div><div class="about-stamp">DESIGNED<br>TO STAND OUT</div></div>
-      <div class="about-copy"><div class="eyebrow">02 / ABOUT</div><h2>NOT JUST<br>A CLIENT.<br><span>YOUR CLIENT.</span></h2><p>58Client är ett Minecraft-klientprojekt med en egen identitet, ett genomtänkt gränssnitt och plats att växa. Håll utkik här för uppdateringar och information om nya funktioner.</p><a class="text-link" href="#download">Hitta nedladdningen <span>→</span></a></div>
-    </section>
+<section class="modules section" id="modules">
+  <div class="modules-head"><div><div class="section-kicker">03 / THE COLLECTION</div><h2>THE MODULE<br><em>LIBRARY.</em></h2></div><p>Explore the different parts of the 58Client interface. The module list will grow as development continues.</p></div>
+  <div class="module-grid">
+    <article class="module-card"><span class="module-symbol">⌘</span><small>01 / INTERFACE</small><h3>ClickGUI</h3><p>Panels, search, settings and controls in one place.</p><b>EXPLORE INTERFACE ↗</b></article>
+    <article class="module-card"><span class="module-symbol">◈</span><small>02 / DISPLAY</small><h3>HUD</h3><p>Customizable on-screen information and visual layout.</p><b>HUD SETTINGS ↗</b></article>
+    <article class="module-card"><span class="module-symbol">✳</span><small>03 / EXTRAS</small><h3>Misc</h3><p>Additional client options and quality-of-life settings.</p><b>MISC OPTIONS ↗</b></article>
+  </div>
+  <div class="module-note"><span>✳</span> Module availability and settings may change between versions.</div>
+</section>
 
-    <section class="download-section" id="download">
-      <div class="eyebrow">03 / GET STARTED</div>
-      <h2>READY TO<br><span>PLAY 58?</span></h2>
-      <p>Nedladdningslänken läggs till här när du har publicerat en version av klienten.</p>
-      <a class="button button-primary disabled-button" href="https://github.com/" target="_blank" rel="noopener">Nedladdning kommer snart <span>↗</span></a>
-      <div class="download-caption">FOLLOW THE PROJECT • STAY UPDATED</div>
-    </section>
-  </main>
+<section class="setup section" id="setup">
+  <div class="section-kicker">04 / GETTING STARTED</div><div class="setup-head"><h2>ADD 58 TO<br><em>YOUR GAME.</em></h2><p>Installation instructions and supported versions will be listed here when the first public release is ready.</p></div>
+  <div class="steps"><article><b>01</b><div><h3>Get the client</h3><p>Download the official 58Client release from this page when available.</p></div></article><article><b>02</b><div><h3>Prepare Minecraft</h3><p>Check the release notes for the required Minecraft version and dependencies.</p></div></article><article><b>03</b><div><h3>Launch and customize</h3><p>Start the game, open the ClickGUI with Right Shift and set up your client.</p></div></article></div>
+</section>
 
-  <footer><a class="brand" href="#home"><span class="brand-mark">58</span><span>CLIENT</span></a><span>© <span id="year"></span> 58Client. All rights reserved.</span><a href="#home">BACK TO TOP ↑</a></footer>
-</body>
-</html>
+<section class="community section" id="reviews">
+  <div class="community-inner"><div class="section-kicker">05 / COMMUNITY</div><h2>MADE TO BE<br><em>YOUR CLIENT.</em></h2><p>58Client is under development. Community feedback and future updates will be shared here.</p><a class="btn secondary" href="#faq">Read the FAQ <span>↗</span></a></div>
+  <div class="review-placeholder"><div class="quote-mark">“</div><h3>YOUR FEEDBACK<br>MATTERS.</h3><p>Community reviews will appear here after launch.</p><span>58CLIENT COMMUNITY</span></div>
+</section>
+
+<section class="download" id="download"><div class="section-kicker">06 / GET 58CLIENT</div><h2>READY TO<br><em>MAKE IT YOURS?</em></h2><p>The public download will be available here when 58Client is ready.</p><a class="btn primary disabled" href="#download" aria-disabled="true">COMING SOON <span>↗</span></a><div class="download-foot">58CLIENT • OFFICIAL WEBSITE</div></section>
+
+<section class="faq section" id="faq"><div><div class="section-kicker">07 / QUESTIONS</div><h2>GOOD TO<br><em>KNOW.</em></h2></div><div class="faq-list">
+  <details><summary>What is 58Client?<b>＋</b></summary><p>58Client is a Minecraft client project focused on a customizable interface and client-side tools.</p></details>
+  <details><summary>How do I open the ClickGUI?<b>＋</b></summary><p>The planned default key is Right Shift. This may be configurable in a future release.</p></details>
+  <details><summary>Where can I download it?<b>＋</b></summary><p>The official download link will be added to this page when a public release is available.</p></details>
+  <details><summary>Where can I find updates?<b>＋</b></summary><p>Release notes and update information can be added here when the project channels are ready.</p></details>
+</div></section>
+</main>
+<footer><a class="logo" href="#home"><span class="logo-icon">58</span><span>58CLIENT</span></a><span>© <span id="year"></span> 58Client. Not affiliated with Mojang or Microsoft.</span><a href="#home">BACK TO TOP ↑</a></footer>
+</body></html>
