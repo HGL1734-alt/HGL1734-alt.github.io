@@ -1,18 +1,16 @@
-# 58Client website
+# 58CLIENT website
 
-A responsive GitHub Pages landing page for 58Client, inspired by modern Minecraft client websites while using original 58Client branding and layout.
+A responsive static website for 58Client.
+
+## Preview locally
+
+Open `index.html` in a browser. The site uses plain HTML, CSS and JavaScript. Google Fonts are loaded online; fallback fonts are included.
 
 ## Publish with GitHub Pages
-1. Create a GitHub repository named `58Client`.
-2. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository root.
-3. Open **Settings → Pages**.
-4. Select **Deploy from a branch**, choose `main` and `/(root)`, then save.
-5. Your site will appear at `https://YOUR-USERNAME.github.io/58Client/`.
 
-## Customize
-- Edit page content in `index.html`.
-- Change colors in `style.css` under `:root`.
-- Replace the Coming Soon download button with the real release URL when available.
-- Add your real Discord, version support, screenshots, reviews and pricing only when those details are confirmed.
+1. Upload `index.html`, `style.css`, `script.js` and this README to the root of your repository.
+2. Open **Settings → Pages** in GitHub.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select your main branch and `/ (root)`, then save.
 
-The GUI/game visuals are CSS mockups, not screenshots of the actual client. Google Fonts are loaded online with local fallback fonts.
+The download section currently says **COMING SOON** because no official client download URL was provided.
